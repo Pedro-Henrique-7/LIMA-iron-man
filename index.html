@@ -2,30 +2,39 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+
     <style>
-         :root {
-            --background-color: #f8fefa;
+    
+        
+        :root {
+            --background-color: #fafafa;
+            --font-poppins-bold: 'Poppins', sans-serif;
         }
+
+        
     </style>
     <title>Iron-Man</title>
 </head>
 
-<body class="bg-[var(--background-color)] bg-[url(./img/background.png)]">
+<body class="bg-[var(--background-color)] ">
+
+
     <header class=" flex justify-center items-center h-22 gap-80">
 
-        <div class="flex  w-72 ">
+        <div class="flex ml-7 w-72 ">
             <img class="w-full" src="./img/marvel-logo.png" alt="logo marvel">
         </div>
 
-        <div class="flex justify-center gap-9 items-center w-96 ">
-            <h3 class="">Home</h3>
-            <h3>Avangers</h3>
-            <h3>Celestials</h3>
-            <h3>About</h3>
+        <div class="flex justify-center gap-9 items-center w-96 list-none " style="font-family: var(--font-poppins-bold); font-weight: 100;">
+         <li class="hover:bg-red-700">Home</li>
+         <li>Avangers</li>
+         <li>Celestials</li>
+         <li>About</li>
         </div>
 
         <div class="flex w-100 items-center justify-end pr-20">
@@ -37,9 +46,18 @@
     </header>
 
 
-    <main class="flex w-full justify-center items-center">
-        <div class="flex justify-center">
+    <main class="flex w-full ">
+
+        <div class="absolute w-full flex justify-end bottom-1">
+            <img src="./img/background.png" alt="">
+        </div>
+
+        <div class="flex w-full justify-end mr-82  ">
             <img src="./img/ironman.png" alt="">
+        </div>
+
+        <div class=" flex flex-col w-20 justify-end mr-5 relative  ">
+            <h2 class="-rotate-90 whitespace-nowrap w-full" style="font-family: var(--font-poppins-bold); font-size: 132px;">iron man</h2>
         </div>
     </main>
 </body>
