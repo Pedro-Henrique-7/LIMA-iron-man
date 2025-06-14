@@ -2,7 +2,13 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gill-sans-mt-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,6 +20,8 @@
         :root {
             --background-color: #fafafa;
             --font-poppins-bold: 'Poppins', sans-serif;
+            --font-color-trans: #8a2d5f67;
+            --font-color: #8a2d5f;
         }
 
         
@@ -24,20 +32,20 @@
 <body class="bg-[var(--background-color)] ">
 
 
-    <header class=" flex justify-center items-center h-22 gap-80">
+    <header class=" flex justify-center items-center h-22 w-full">
 
-        <div class="flex ml-7 w-72 ">
-            <img class="w-full" src="./img/marvel-logo.png" alt="logo marvel">
+        <div class="flex w-72 ">
+            <img class="absolute left-[52px] top-[18px]" src="./img/marvel-logo.png" alt="logo marvel">
         </div>
 
-        <div class="flex justify-center gap-9 items-center w-96 list-none " style="font-family: var(--font-poppins-bold); font-weight: 100;">
-         <li class="hover:bg-red-700">Home</li>
+        <div class="flex justify-center gap-9 items-center w-96 list-none text-1xl relative left-16" style="font-family: 'Poppins', sans-serif;">
+         <li>Home</li>
          <li>Avangers</li>
          <li>Celestials</li>
          <li>About</li>
         </div>
 
-        <div class="flex w-100 items-center justify-end pr-20">
+        <div class="flex w-[134] items-center justify-end ml-96 gap-4">
             <img src="./icons/search.svg" alt="">
             <img src="./icons/dashboard.svg" alt="">
             <img src="./icons/user-icon.svg" alt="">
@@ -46,19 +54,32 @@
     </header>
 
 
-    <main class="flex w-full ">
+    <main class="flex w-full relative">
 
-        <div class="absolute w-full flex justify-end bottom-1">
-            <img src="./img/background.png" alt="">
+            <img class="relative left-[1032px] h-full w-[300px]" src="./img/ironman.png" alt="">
+
+
+
+        <div class="flex flex-col absolute left-51 top-42 w-[500px] h-[324px]">
+            <p class="h-[16px]" style="font-family: 'Poppins', sans-serif; font-size: 16px;">Marvel Character</p>
+            <h2 class="h-[90px] uppercase font-extrabold text-[80px]" style="font-family: 'gill-sans-mt-2', sans-serif;  color: var(--font-color);">Iron-Man</h2>
+
+            <h3 class="mt-20 text-[24px] font-medium" style="font-family: 'Nunito' sans-serif; ">Tony Stark</h3>
+
+            <p class="flex flex-wrap mt-4 text-[15px] font-light" style="font-family: 'Poppins', sans-serif;">Iron Man is a superhero appearing in American comic books published by Marvel Comics. Each of Tony’s suits provides a full range of telecommunications, sophisticated artificial intelligence capable of piloting Tony to safety should he be rendered unconscious.</p>
+        </div>
+        
+     
+            <h2 class="-rotate-90 font-extrabold text-[134px] absolute  left-[1512px] top-[276px]" style="color: var(--font-color-trans); font-family: 'Poppins', sans-serif;">ironman</h2>
+      
+
+        <div class="flex flex-col absolute left-[48px] top-[556px] w-[44px] h-11 gap-[8px]">
+            <img class="w-11 h-11" src="./icons/github.png" alt="">
+            <img class="w-11 h-11" src="./icons/figma.png" alt="">
+            <img class="w-11 h-11" src="./icons/twiter.png" alt="">
+            <img class="w-11 h-11" src="./icons/instagram.png" alt="">
         </div>
 
-        <div class="flex w-full justify-end mr-82  ">
-            <img src="./img/ironman.png" alt="">
-        </div>
-
-        <div class=" flex flex-col w-20 justify-end mr-5 relative  ">
-            <h2 class="-rotate-90 whitespace-nowrap w-full" style="font-family: var(--font-poppins-bold); font-size: 132px;">iron man</h2>
-        </div>
     </main>
 </body>
 
