@@ -29,26 +29,61 @@
     <title>Iron-Man</title>
 </head>
 
-<body class="bg-[var(--background-color)] ">
+<body class="bg-[var(--background-color)] h-screen ">
 
-    <header>
+    <img  class="absolute left-[308px] h-[600px]" src="./img/background.png" alt="">
+
+    <header class="w-screen h-12">
         
         <img  class= "flex w-12 h-4 fixed top-2 left-2" src="./img/marvel-logo.png" alt="">
 
-        <div class="flex w-12 h-4 fixed top-2 right-2 ">
-        <img src="./icons/search.svg" alt="">
-        <img src="./icons/dashboard.svg" alt="">
-        <img src="./icons/user-icon.svg" alt="">
+        <div class="flex w-12 h-4 fixed top-2 right-8 ">
+            <img src="./icons/search.svg" alt="">
+            <img src="./icons/dashboard.svg" alt="">
+            <img src="./icons/user-icon.svg" alt="">
         </div>
         
-        <menu class="flex text-[10px] justify-center gap-4 items-center relative top-8 " style="font-family: 'Poppins', sans-serif;">
-            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)]">Home</li>
-            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)]">Avangers</li>
-            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)]">Celestials</li>
-            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)]">About</li>
+        <menu class="flex text-[10px] justify-center gap-4 items-center relative top-8" style="font-family: 'Poppins', sans-serif;">
+            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)] " style="transition: 90ms;">Home</li>
+            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)] "style="transition: 90ms;">Avangers</li>
+            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)] "style="transition: 90ms;">Celestials</li>
+            <li class="border-b-0 hover:border-b-2 border-[var(--font-color)]  "style="transition: 90ms;">About</li>
         </menu>
 
     </header>
+
+    <main class="flex justify-center ">
+
+        <img class="w-36 h-80 mr-1" src="./img/ironman.png" alt="">
+
+    </main>
+    
+    <h2 class="-rotate-90 font-extrabold h-[100px] text-[92px] absolute left-12 top-[236px]" style="color: var(--font-color-trans); font-family: 'Poppins', sans-serif;">ironman</h2>
+    
+    <div class="flex flex-col ml-2 w-50 ">
+            <p class="h-[6px]" style="font-family: 'Poppins', sans-serif; font-size: 8px;">Marvel Character</p>
+            <h2 class=" uppercase font-extrabold text-[28px]" style="font-family: 'gill-sans-mt-2', sans-serif;  color: var(--font-color);">Iron-Man</h2>
+            <p class=" w-48 text-[10px] font-light" style="font-family: 'Poppins', sans-serif;">Iron Man is a superhero appearing in American comic books published by Marvel Comics. Each of Tony’s suits provides a full range of telecommunications, sophisticated artificial intelligence capable of piloting Tony to safety should he be rendered unconscious.</p>
+    </div>
+
+    <button class="bg-slate-700 text-[10px] text-white w-[116px] ml-3 " style="font-family: 'Poppins', sans-serif; font-weight: 200;">Are You a Marvel Fan ?</button>
+
+
+
+    <footer class="flex h-[32px]">
+        <div class="flex w-12 gap-1 h-4 ml-2 mt-[16px] ">
+            <img src="./icons/github.png" alt="">
+            <img src="./icons/figma.png" alt="">
+            <img src="./icons/twiter.png" alt="">
+            <img src="./icons/instagram.png" alt="">
+        </div>
+
+        <div class="flex gap-1 absolute right-0 mt-2">
+            <p style="font-family: 'Poppins', sans-serif;">Next Character</p>
+            <img class="w-6 h-6" src="./icons/next.png" alt="">
+        </div>
+        
+    </footer>
 
 </body>
 
